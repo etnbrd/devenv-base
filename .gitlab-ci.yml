@@ -1,8 +1,8 @@
-image: gitlab:dind
+image: gitlab/dind
 
 before_script:
   - docker info
 
-build_image:
+build:
   script:
     - docker build -t my-docker-image .
